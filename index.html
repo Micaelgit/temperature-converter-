@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Temperature Converter</title>
+  </head>
+  <body>
+    <h1>Mike's Temperature Converter</h1>
+    <div id="mainFeature">
+      <h2>Fahrenheit to Celsius</h2>
+      <p>
+        Type a value in the Fahrenheit field to convert the value to Celsius:
+      </p>
+
+      <p>
+        <label>Fahrenheit</label>
+        <input
+          id="inputFahrenheit"
+          type="number"
+          placeholder="Fahrenheit"
+          oninput="temperatureConverterFC(this.value)"
+          onchange="temperatureConverterFC(this.value)"
+        />
+      </p>
+      <p>Celcius: <span id="outputCelcius"></span></p>
+    </div>
+    <div id="subFeature">
+      <h2>Celsius to Fahrenheit</h2>
+      <p>
+        Type a value in the Celsius field to convert the value to Fahrenheit:
+      </p>
+
+      <p>
+        <label>Celsius</label>
+        <input
+          id="inputCelsius"
+          type="number"
+          placeholder="Celcius"
+          oninput="temperatureConverterCF(this.value)"
+          onchange="temperatureConverterCF(this.value)"
+        />
+      </p>
+      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
